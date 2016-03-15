@@ -1,0 +1,7 @@
+name 'weblogic'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures weblogic'
+long_description 'Installs/Configures weblogic'
+version '0.1.0'

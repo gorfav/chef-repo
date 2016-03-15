@@ -1,0 +1,43 @@
+I, [2016-03-11T13:31:58.681592 #2556]  INFO -- default-centos-64: -----> Creating <default-centos-64>...
+I, [2016-03-11T13:31:58.681863 #2556]  INFO -- default-centos-64: If you are not using an account that qualifies under the AWS
+free-tier, you may be charged to run these suites. The charge
+should be minimal, but neither Test Kitchen nor its maintainers
+are responsible for your incurred costs.
+
+E, [2016-03-11T13:31:59.928279 #2556] ERROR -- default-centos-64: Search returned 0 images.
+E, [2016-03-11T13:31:59.929111 #2556] ERROR -- default-centos-64: Create failed on instance <default-centos-64>.
+E, [2016-03-11T13:31:59.929248 #2556] ERROR -- default-centos-64: ------Exception-------
+E, [2016-03-11T13:31:59.929290 #2556] ERROR -- default-centos-64: Class: ArgumentError
+E, [2016-03-11T13:31:59.929317 #2556] ERROR -- default-centos-64: Message: missing required parameter params[:image_id]
+E, [2016-03-11T13:31:59.929338 #2556] ERROR -- default-centos-64: ------Backtrace-------
+E, [2016-03-11T13:31:59.929357 #2556] ERROR -- default-centos-64: /home/ubuntu/.chefdk/gem/ruby/2.1.0/gems/aws-sdk-core-2.2.26/lib/aws-sdk-core/param_validator.rb:26:in `validate!'
+E, [2016-03-11T13:31:59.929381 #2556] ERROR -- default-centos-64: /home/ubuntu/.chefdk/gem/ruby/2.1.0/gems/aws-sdk-core-2.2.26/lib/aws-sdk-core/param_validator.rb:11:in `validate!'
+E, [2016-03-11T13:31:59.929413 #2556] ERROR -- default-centos-64: /home/ubuntu/.chefdk/gem/ruby/2.1.0/gems/aws-sdk-core-2.2.26/lib/aws-sdk-core/plugins/param_validator.rb:20:in `call'
+E, [2016-03-11T13:31:59.929434 #2556] ERROR -- default-centos-64: /home/ubuntu/.chefdk/gem/ruby/2.1.0/gems/aws-sdk-core-2.2.26/lib/seahorse/client/plugins/raise_response_errors.rb:14:in `call'
+E, [2016-03-11T13:31:59.929453 #2556] ERROR -- default-centos-64: /home/ubuntu/.chefdk/gem/ruby/2.1.0/gems/aws-sdk-core-2.2.26/lib/aws-sdk-core/plugins/param_converter.rb:20:in `call'
+E, [2016-03-11T13:31:59.929472 #2556] ERROR -- default-centos-64: /home/ubuntu/.chefdk/gem/ruby/2.1.0/gems/aws-sdk-core-2.2.26/lib/seahorse/client/plugins/response_target.rb:21:in `call'
+E, [2016-03-11T13:31:59.929491 #2556] ERROR -- default-centos-64: /home/ubuntu/.chefdk/gem/ruby/2.1.0/gems/aws-sdk-core-2.2.26/lib/seahorse/client/request.rb:70:in `send_request'
+E, [2016-03-11T13:31:59.929511 #2556] ERROR -- default-centos-64: /home/ubuntu/.chefdk/gem/ruby/2.1.0/gems/aws-sdk-core-2.2.26/lib/seahorse/client/base.rb:207:in `block (2 levels) in define_operation_methods'
+E, [2016-03-11T13:31:59.929530 #2556] ERROR -- default-centos-64: /home/ubuntu/.chefdk/gem/ruby/2.1.0/gems/aws-sdk-resources-2.2.26/lib/aws-sdk-resources/request.rb:24:in `call'
+E, [2016-03-11T13:31:59.929559 #2556] ERROR -- default-centos-64: /home/ubuntu/.chefdk/gem/ruby/2.1.0/gems/aws-sdk-resources-2.2.26/lib/aws-sdk-resources/operations.rb:41:in `call'
+E, [2016-03-11T13:31:59.929579 #2556] ERROR -- default-centos-64: /home/ubuntu/.chefdk/gem/ruby/2.1.0/gems/aws-sdk-resources-2.2.26/lib/aws-sdk-resources/operations.rb:87:in `call'
+E, [2016-03-11T13:31:59.929598 #2556] ERROR -- default-centos-64: /home/ubuntu/.chefdk/gem/ruby/2.1.0/gems/aws-sdk-resources-2.2.26/lib/aws-sdk-resources/operation_methods.rb:19:in `block in add_operation'
+E, [2016-03-11T13:31:59.929617 #2556] ERROR -- default-centos-64: /home/ubuntu/.chefdk/gem/ruby/2.1.0/gems/kitchen-ec2-1.0.0/lib/kitchen/driver/aws/client.rb:77:in `create_instance'
+E, [2016-03-11T13:31:59.929640 #2556] ERROR -- default-centos-64: /home/ubuntu/.chefdk/gem/ruby/2.1.0/gems/kitchen-ec2-1.0.0/lib/kitchen/driver/ec2.rb:319:in `submit_server'
+E, [2016-03-11T13:31:59.933890 #2556] ERROR -- default-centos-64: /home/ubuntu/.chefdk/gem/ruby/2.1.0/gems/kitchen-ec2-1.0.0/lib/kitchen/driver/ec2.rb:170:in `create'
+E, [2016-03-11T13:31:59.933921 #2556] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:424:in `public_send'
+E, [2016-03-11T13:31:59.933942 #2556] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:424:in `block in perform_action'
+E, [2016-03-11T13:31:59.933962 #2556] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:488:in `call'
+E, [2016-03-11T13:31:59.933991 #2556] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:488:in `synchronize_or_call'
+E, [2016-03-11T13:31:59.934013 #2556] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:453:in `block in action'
+E, [2016-03-11T13:31:59.934032 #2556] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-03-11T13:31:59.934052 #2556] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:452:in `action'
+E, [2016-03-11T13:31:59.934071 #2556] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:424:in `perform_action'
+E, [2016-03-11T13:31:59.934089 #2556] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `create_action'
+E, [2016-03-11T13:31:59.934108 #2556] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:341:in `block in transition_to'
+E, [2016-03-11T13:31:59.934127 #2556] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:340:in `each'
+E, [2016-03-11T13:31:59.934146 #2556] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:340:in `transition_to'
+E, [2016-03-11T13:31:59.934164 #2556] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:127:in `create'
+E, [2016-03-11T13:31:59.934196 #2556] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2016-03-11T13:31:59.934216 #2556] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2016-03-11T13:31:59.934234 #2556] ERROR -- default-centos-64: ----------------------

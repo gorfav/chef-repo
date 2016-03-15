@@ -1,0 +1,7 @@
+DEPENDENCIES
+  weblogic
+    path: .
+    metadata: true
+
+GRAPH
+  weblogic (0.1.0)

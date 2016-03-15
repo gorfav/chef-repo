@@ -1,0 +1,36 @@
+---
+driver:
+  name: ec2
+  aws_ssh_key_id: mykey
+  region: eu-central-1
+  availability_zone: a
+  subnet_id: subnet-2488104d
+  instance_type: t2.micro
+  security_group_ids: ['sg-f56b129c']
+  retryable_tries: 120
+  iam_profile_name: chef-client
+
+
+transport:
+  ssh_key: /home/ubuntu/cert_and_keys/mykey.pem
+  username: ec2-user
+  connection_timeout: 10
+  connection_retries: 5
+
+platforms:
+  - name: centos-7
+    driver:
+        image_id: ami-bc5b48d0
+        block_device_mappings:
+         - device_name: /dev/sdb
+           ebs:
+            volume_type: gp2
+            volume_size: 8
+            delete_on_termination: true
+
+suites:
+  - name: default
+    run_list:
+      - recipe[weblogic::default]
+    attributes:
+
