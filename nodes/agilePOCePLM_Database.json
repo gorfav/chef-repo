@@ -1,0 +1,18 @@
+{
+  "name": "agilePOCePLM_Database",
+  "normal": {
+    "tags": null,
+    "chef_provisioning": {
+      "reference": {
+        "driver_version": "1.3.1",
+        "allocated_at": "2016-03-29 08:41:12 UTC",
+        "host_node": "chefzero://localhost:8889/nodes/",
+        "image_id": "ami-86896fe9",
+        "instance_id": "i-b7de040a",
+        "key_name": "mykey",
+        "ssh_username": "ec2-user"
+      },
+      "driver_url": "aws::eu-central-1"
+    }
+  }
+}
